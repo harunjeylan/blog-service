@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+  .btn-contained{
+    @apply  py-2 px-4  font-semibold rounded-lg shadow-md  focus:outline-none focus:ring-2 focus:ring-opacity-75 ease-in-out duration-200;
+  }
+   .btn-outline{
+    @apply py-2 px-4 outline outline-1 font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2  focus:ring-opacity-75 ease-in-out duration-200;
+  }
+
+  .btn-contained-primary {
+    @apply bg-primary hover:bg-primary-600 focus:ring-primary ;
+  }
+   .btn-contained-light {
+    @apply bg-light hover:bg-light-600 focus:ring-light ;
+  }
+   .btn-outline-primary {
+    @apply  outline-primary hover:bg-primary/40  focus:ring-primary ;
+  }
+     .btn-outline-light {
+    @apply  outline-light hover:bg-light/40  focus:ring-light ;
+  }
+  .select2-dropdown {
+    @apply rounded-b-lg shadow-md;
+  }
+  .select2-search {
+    @apply border border-gray-300 rounded;
+  }
+  .select2-results__group {
+    @apply text-lg font-bold text-gray-900;
+  }
+}
+
+@layer base {
+  .default-theme {
+    @apply bg-background dark:bg-background-dark-600 text-dark-800 dark:text-light-100
+  }
+  h2 {
+    @apply text-xl;
+  }
+  /* ... */
+}
