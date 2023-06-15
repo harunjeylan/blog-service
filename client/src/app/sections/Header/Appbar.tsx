@@ -4,8 +4,6 @@ import Portal from "@/components/Portal";
 import ButtonToggleTheme from "@/components/ui/ButtonToggleTheme";
 import Navlink from "@/components/ui/Navlink";
 import Sidenav from "@/components/ui/Sidenav";
-import useSidenav from "@/components/ui/Sidenav";
-import { useMediaQuery } from "@/hooks/useMediaQuery";
 import React, { useState } from "react";
 
 const Appbar = () => {

@@ -1,5 +1,5 @@
-import Appbar from "./Components/Appbar";
-import Topbar from "./Components/Topbar";
+import Appbar from "./sections/Header/Appbar";
+import Topbar from "./sections/Header/Topbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-background-light-100 dark:bg-background-dark-800 text-dark dark:text-light font-sans`}
+        className={`${inter.className} bg-background-light dark:bg-background-dark text-dark dark:text-light font-sans `}
       >
         <Topbar />
         <Appbar />

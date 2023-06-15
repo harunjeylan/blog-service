@@ -10,7 +10,7 @@ type SidenavProps = {
 
 const Sidenav = ({ children, isOpened, setIsOpened }: SidenavProps) => {
   return (
-    <div className={`fixed top-0 left-0  h-screen ease-in-out duration-500`}>
+    <div className={`fixed top-0 left-0  h-screen  ease-in-out duration-500`}>
       <span
         data-test-id="sizenav-cover"
         onClick={() => setIsOpened(false)}
@@ -21,7 +21,7 @@ const Sidenav = ({ children, isOpened, setIsOpened }: SidenavProps) => {
       <aside
         className={`${
           isOpened ? "w-[400px]" : "w-0"
-        } relative max-w-[80%] h-screen bg-background dark:bg-background-dark-800 ease-in-out duration-500 overflow-x-hidden`}
+        } relative max-w-[80%] h-screen bg-background dark:bg-dark-600 ease-in-out duration-500 overflow-x-hidden`}
       >
         <div className="w-full flex justify-end">
           <button
