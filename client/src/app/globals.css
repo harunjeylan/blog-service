@@ -101,6 +101,9 @@
   .btn-outline-light {
     @apply outline-light hover:bg-light/40  focus:ring-light;
   }
+  .Chip {
+    @apply p-1 px-2 rounded-2xl  bg-dark/20 dark:bg-light/20;
+  }
   .select2-dropdown {
     @apply rounded-b-lg shadow-md;
   }
@@ -110,23 +113,34 @@
   .select2-results__group {
     @apply text-lg font-bold text-gray-900;
   }
+  .Card {
+    @apply block shadow border overflow-hidden rounded-lg bg-neutral-100 hover:bg-neutral-200 border-neutral-300 dark:bg-dark-600 dark:border-dark-300 dark:hover:bg-dark-400 ease-in-out duration-100;
+  }
+  .Divider {
+    @apply w-full bg-slate-300 dark:bg-dark-300 h-[2px]
+  }
+
 }
 
 @layer base {
   .default-theme {
     @apply bg-background dark:bg-dark-600 text-dark-800 dark:text-light-100;
   }
-  .grid-auto-320 {
-    @apply grid-cols-[repeat(auto-fill,minmax(320px,1fr))] auto-rows-auto;
+  .grid-auto-sm {
+    @apply grid-cols-[repeat(auto-fill,minmax(240px,1fr))] auto-rows-auto;
   }
-  .Chip {
-    @apply p-1 px-2 rounded-2xl  bg-dark/20 dark:bg-light/20;
+   .grid-auto-md {
+    @apply grid-cols-[repeat(auto-fill,minmax(380px,1fr))] auto-rows-auto;
   }
-  .Card {
-    @apply block  bg-light-200 border border-light-300 rounded-lg shadow hover:bg-light-300 dark:bg-dark-600 dark:border-dark-100 dark:hover:bg-dark-300 ease-in-out duration-100;
+     .grid-auto-lg {
+    @apply grid-cols-[repeat(auto-fill,minmax(640px,1fr))] auto-rows-auto;
+  }
+     .grid-auto-xl {
+    @apply grid-cols-[repeat(auto-fill,minmax(768px,1fr))] auto-rows-auto;
   }
 
-  .Section {
-    @apply md:container max-w-7xl my-2 px-8 md:px-16 mx-auto;
+  .Link-text{
+     @apply  hover:text-accent-800 dark:hover:text-accent-200 w-fit  ease-in-out duration-100;
   }
+
 }

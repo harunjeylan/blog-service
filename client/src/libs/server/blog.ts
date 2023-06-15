@@ -6,3 +6,4 @@ async function getBlogs() {
 
   return res.json();
 }
+export { getBlogs };

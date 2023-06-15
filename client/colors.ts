@@ -66,7 +66,8 @@ export default {
     light: "#a475f9",
     dark: "#6639ba",
 
-    200: "#d8b9ff",
+    100: "#d8b9ff",
+    200: "#d2b8ff",
     300: "#c297ff",
     400: "#a475f9",
     500: "#8250df",

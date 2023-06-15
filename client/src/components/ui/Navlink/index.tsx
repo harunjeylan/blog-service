@@ -20,7 +20,10 @@ const Navlink = ({
       data-test-id={`Navlink-${id}`}
       className={`${className} w-full h-full flex `}
     >
-      <Link href={href} className="w-full h-full p-1  ease-in-out duration-200">
+      <Link
+        href={href}
+        className="w-full h-full p-2 hover:bg-neutral-300 hover:dark:bg-dark-700 ease-in-out duration-200"
+      >
         {children}
       </Link>
     </li>

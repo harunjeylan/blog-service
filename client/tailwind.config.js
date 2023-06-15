@@ -24,5 +24,5 @@ module.exports = {
       ...appColors,
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [],
 };

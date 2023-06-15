@@ -4,7 +4,7 @@ import Appbar from "./Appbar";
 
 const Header = () => {
   return (
-    <header>
+    <header className="sticky">
       <Topbar />
       <Appbar />
     </header>

@@ -23,6 +23,7 @@ export default function RootLayout({
         <Topbar />
         <Appbar />
         {children}
+
         <div id="service-portal" />
       </body>
     </html>
