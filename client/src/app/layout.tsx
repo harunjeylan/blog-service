@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-background-light dark:bg-background-dark text-dark dark:text-light font-sans `}
+        className={`${inter.className} bg-background-light dark:bg-background-dark text-dark-700 dark:text-light font-sans `}
       >
         <Topbar />
         <Appbar />

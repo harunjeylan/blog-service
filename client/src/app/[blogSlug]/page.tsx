@@ -3,6 +3,7 @@ import { getPost, getPosts } from "@/libs/server/post";
 import BlogCard from "@/components/cards/BlogCard";
 import Sidebar from "../sections/Sidebar";
 import Blog from "./sections/Blog";
+import Comments from "@/components/Comments";
 
 type BlogPage = {
   params: { blogSlug: string };

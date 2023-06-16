@@ -53,7 +53,7 @@ const useTheme = () => {
   const setSystemPreference = () => {
     setTheme(undefined);
   };
-  return { setDark, setLight, toggleLightDark, setSystemPreference };
+  return { theme, setDark, setLight, toggleLightDark, setSystemPreference };
 };
 
 export default useTheme;

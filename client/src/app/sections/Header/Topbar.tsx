@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Topbar = () => {
   const [isOpened, setIsOpened] = useState<boolean>(true);
@@ -42,8 +43,13 @@ const Topbar = () => {
           )}
           <li></li>
         </ul>
-        <div>
-          <button onClick={() => setIsOpened(false)}>X</button>
+        <div className="flex items-center">
+          <button
+            className="btn-icon w-fit h-fit my-auto"
+            onClick={() => setIsOpened(false)}
+          >
+            <AiOutlineClose />
+          </button>
         </div>
       </nav>
     );

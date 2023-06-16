@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import React, { ReactNode, useEffect, useRef, useState } from "react";
-
+import { AiOutlineClose } from "react-icons/ai";
 type SidenavProps = {
   children: ReactNode | ReactNode[];
   isOpened: boolean;
@@ -23,13 +24,16 @@ const Sidenav = ({ children, isOpened, setIsOpened }: SidenavProps) => {
           isOpened ? "w-[400px]" : "w-0"
         } relative max-w-[80%] h-screen bg-neutral-200 dark:bg-dark-800 ease-in-out duration-500 overflow-x-hidden border-r border-r-neutral-300 dark:border-dark-300`}
       >
-        <div className="w-full flex justify-end bg-neutral-300 dark:bg-dark-700">
+        <div className="w-full px-2 flex justify-between bg-neutral-300 dark:bg-dark-700">
+          <Link href="/" className="font-sans font-medium w-fit h-full py-2">
+            BLOG SERVICE
+          </Link>
           <button
             data-test-id="close-sizenav-button"
-            className="m-1 p-1"
+            className="btn-icon w-fit h-fit my-auto"
             onClick={() => setIsOpened(false)}
           >
-            {"<<<"}
+            <AiOutlineClose />
           </button>
         </div>
         {children}

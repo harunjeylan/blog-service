@@ -1,5 +1,5 @@
 async function getPosts() {
-  const res = await fetch(`${process.env.BACKEND_URL}/posts`);
+  const res = await fetch(`${process.env.BACKEND_URL}/posts?limit=6`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }

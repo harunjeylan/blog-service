@@ -4,7 +4,7 @@ import useTheme from "@/hooks/useTheme";
 import React from "react";
 
 const ButtonToggleTheme = ({ id }: { id?: string }) => {
-  const { toggleLightDark } = useTheme();
+  const { theme, toggleLightDark } = useTheme();
 
   return (
     <button
